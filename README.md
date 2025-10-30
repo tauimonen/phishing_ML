@@ -20,20 +20,9 @@ The dataset is **phishing.csv**, which contains features extracted from websites
 - `1` - Phishing site  
 - `-1` - Legitimate site  
 
-**Features include:**
-
-- `Shortining_Service` – Whether URL shortening service is used  
-- `HTTPS_token` – Suspicious HTTPS token in URL  
-- `Abnormal_URL` – Abnormal URL pattern  
-- `SSLfinal_State` – SSL certificate information  
-- `Favicon` – Favicon status  
-- `port` – Non-standard port usage  
-- `on_mouseover` – JavaScript mouseover events  
-- `Submitting_to_email` – Whether form submits to email
-
 ### Note on Features
 
-The phishing dataset contains over 50 features extracted from websites.  
+The phishing dataset contains over 30 features extracted from websites.  
 In the current decision tree module, only 8 selected features are used for simplicity and faster training:  
 
 - Shortining_Service  
@@ -56,7 +45,7 @@ This dataset is based on the study: [Mohammad et al., 2015](http://eprints.hud.a
 Clone this repository and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/phishing_ml.git
+git clone https://github.com/tauimonen/phishing_ML
 cd phishing_ml
 pip install -r requirements.txt
 ```
@@ -107,4 +96,4 @@ java -version
 **Author:** tauimonen
 **Date:** 2025-10-30
 **License:** MIT License  
-You are free to use, modify, and distribute this software under the terms of the MIT License. See the [LICENSE](LICENSE) file for details.
+You are free to use, modify, and distribute this software under the terms of the MIT License.  see the [LICENSE](LICENSE.txt) file for details.
