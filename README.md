@@ -88,6 +88,8 @@ print("Best Model ID:", aml_results["best_model"].model_id)
 ```
 This will run H2O AutoML, train multiple models, and return the best model along with test performance metrics.
 
+***A demonstration of how to use the package and its modules can be found in the project folder under phishing_ml_demo/usage.ipynb.***
+
 ## Notes
 ### Notes
 

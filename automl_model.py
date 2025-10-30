@@ -1,7 +1,7 @@
 """
 automl_model.py
 
-Author: Your Name
+Author: tauimonen
 Date: 2025-10-30
 Description:
     This module implements an H2O AutoML pipeline for phishing website detection.
