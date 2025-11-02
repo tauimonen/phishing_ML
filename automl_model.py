@@ -54,6 +54,10 @@ def run_automl(csv_path, target="Result", max_models=10, max_runtime_secs=90, me
     best_model = aml.leader
     perf = best_model.model_performance(test)
     
+    # Save the best model
+    model_path = h2o.save_model(best_model, path="./models", force=True)
+    print(f"Model saved: {model_path}")
+    
     return {
         "aml": aml,
         "best_model": best_model,
