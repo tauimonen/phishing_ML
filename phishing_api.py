@@ -121,3 +121,9 @@ def get_metrics():
         "confusion_matrix": last_metrics["confusion_matrix"].tolist(),
         "classification_report": last_metrics["classification_report"],
     }
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run("phishing_api:app", host="127.0.0.1", port=8000, reload=True)

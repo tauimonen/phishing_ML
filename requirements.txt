@@ -3,3 +3,6 @@ scikit-learn
 matplotlib
 seaborn
 h2o
+fastapi 
+pydantic 
+uvicorn
